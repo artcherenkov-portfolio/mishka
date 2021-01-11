@@ -1,0 +1,507 @@
+.knitting {
+  padding: 22px 30px 55px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.knitting__intro {
+  margin: 0;
+  .setFont(13px, @dark-grey, 24px, @regular, left);
+  padding-bottom: 24px;
+}
+
+.knitting__part {
+  border: none;
+  border-top: 1px solid @green;
+  padding: 0;
+  margin: 0;
+}
+
+.knitting__header {
+  .setFont(17px, @green, 16px, @bold, left);
+  text-transform: uppercase;
+  padding-left: 0;
+}
+
+.knitting__type-header {
+  padding-right: 27px;
+}
+
+.knitting__type-list {
+  .resetList();
+  padding: 34px 0 41px;
+}
+
+.knitting__type-item {
+  position: relative;
+}
+
+.knitting__type-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.knitting__color-header {
+  padding-right: 18px;
+}
+
+.knitting__color-list {
+  .resetList();
+  padding: 25px 0 32px;
+}
+
+.knitting__color-item:not(:last-child) {
+  padding-bottom: 22px;
+}
+
+.knitting__personal-header {
+  padding-right: 22px;
+}
+
+.knitting__personal-list {
+  .resetList();
+  padding: 29px 0 31px;
+}
+
+.knitting__personal-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.knitting__personal-item:not(:last-child) {
+  padding-bottom: 22px;
+}
+
+.knitting__contact-header {
+  padding-right: 31px;
+
+  &--email {
+    padding-right: 23px;
+  }
+}
+
+.knitting__contact-input {
+  margin: 7px 0 33px;
+  width: 100%;
+}
+
+.knitting__contact-item label,
+.knitting__extra-item label {
+  display: none;
+}
+
+.knitting__contact-input-wrapper {
+  position: relative;
+}
+
+.knitting__contact-input-wrapper--tel input::placeholder {
+  font-size: 19px;
+}
+
+.knitting__contact-input-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.2;
+  fill: black;
+
+  &--mail {
+    top: 18px;
+    right: 4px;
+  }
+
+  &--tel {
+    top: 18px;
+    right: 8px;
+  }
+}
+
+.knitting__extra-wrapper {
+  margin-top: -2px;
+}
+
+.knitting__extra-header {
+  padding-right: 25px;
+}
+
+.knitting__note {
+  margin: 0;
+  .setFont(14px, @dark-grey, 16px, @regular, left);
+  padding-bottom: 31px;
+}
+
+.knitting__submit {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  width: 260px;
+  font-size: 17px;
+  line-height: 48px;
+  text-align: center;
+  color: @dark-grey;
+  font-weight: @bold;
+  border: solid 2px #444444;
+  background-color: transparent;
+
+  &:hover {
+    background-color: @dark-grey;
+    color: white;
+  }
+
+  &:active {
+    background-color: @dark-grey;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: @tablet) {
+  .knitting {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .knitting__intro {
+    width: 768px;
+    margin: 0 auto;
+    padding: 67px 50px 15px 50px;
+    .setFont(17px, @dark-grey, 30px, @regular, left);
+  }
+
+  .knitting__part {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 50px;
+    border: none;
+    position: relative;
+  }
+
+  .knitting__header {
+    top: 30px;
+    left: 50px;
+    position: absolute;
+    border: none;
+  }
+
+  .knitting__list,
+  .knitting__contact-item,
+  .knitting__extra-item {
+    padding-left: 167px;
+  }
+
+  .knitting__color-wrapper,
+  .knitting__contact-wrapper {
+    background-color: #f1f1f1;
+  }
+
+  .knitting__type-header {
+    top: 58px;
+    left: 51px;
+  }
+
+  .knitting__type-list {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  .knitting__type-item:not(:last-child) {
+    padding-bottom: 23px;
+  }
+
+  .knitting__color-header {
+    top: 67px;
+    left: 51px;
+  }
+
+  .knitting__color-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 48px;
+    padding-bottom: 28px;
+  }
+
+  //чтобы усилить вес селектора
+  .knitting__color-item,
+  .knitting__color-item:not(:last-child) {
+    width: 40%;
+    padding-bottom: 24px;
+  }
+
+  .knitting__color-item:nth-child(2n) {
+    margin-left: 62px;
+  }
+
+  .knitting__personal-header {
+    top: 67px;
+    left: 51px;
+  }
+
+  .knitting__personal-list {
+    padding-top: 47px;
+    padding-bottom: 50px;
+  }
+
+  .knitting__personal-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .knitting__personal-item:not(:last-child) {
+    padding-bottom: 21px;
+  }
+
+  .knitting__personal-label {
+    line-height: 52px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 25px;
+  }
+
+  .knitting__personal-input {
+    flex-grow: 1;
+    margin-top: 3px;
+    padding-left: 18px;
+  }
+
+  .knitting__contact-header {
+    top: 24px;
+    left: 51px;
+  }
+
+  .knitting__contact-wrapper {
+    padding-top: 43px;
+    padding-bottom: 33px;
+  }
+
+  .knitting__contact-input {
+    margin-bottom: 17px;
+    padding-left: 17px;
+  }
+
+  .knitting__contact-input-icon {
+    &--mail {
+      top: 18px;
+      right: 22px;
+    }
+
+    &--tel {
+      top: 18px;
+      right: 26px;
+    }
+  }
+
+  .knitting__extra {
+    padding-bottom: 0;
+  }
+
+  .knitting__extra-header {
+    top: 43px;
+    left: 51px;
+  }
+
+  .knitting__extra-wrapper {
+    padding-top: 26px;
+  }
+
+  .knitting__extra-input {
+    margin-bottom: 0;
+  }
+
+  .knitting__controls {
+    width: 768px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px;
+    padding-top: 54px;
+    padding-bottom: 51px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .knitting__submit {
+    width: 230px;
+    order: 1;
+  }
+
+  .knitting__note {
+    order: 2;
+    line-height: 30px;
+    font-size: 17px;
+    padding: 0;
+    padding-bottom: 4px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .knitting {
+    padding: 0;
+  }
+
+  .knitting__intro-wrapper {
+    width: 1150px;
+    padding: 0 225px;
+    margin: 0 auto;
+  }
+
+  .knitting__intro {
+    margin: 0;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 105px;
+    padding-bottom: 25px;
+    .setFont(17px, @dark-grey, 30px, @regular, left);
+  }
+
+  .knitting__part {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 50px;
+    border: none;
+    position: relative;
+  }
+
+  .knitting__header {
+    top: 40px;
+    left: 50px;
+    position: absolute;
+    border: none;
+  }
+
+
+  .knitting__type-header {
+    top: 49px;
+    left: 115px;
+  }
+
+  .knitting__color-header {
+    top: 67px;
+    left: 112px;
+  }
+
+  .knitting__personal-header {
+    top: 67px;
+    left: 112px;
+  }
+
+  .knitting__contact-header {
+    top: 26px;
+    left: 112px;
+  }
+
+  .knitting__extra-header {
+    top: 70px;
+    left: 113px;
+  }
+
+  .knitting__list,
+  .knitting__contact-item,
+  .knitting__extra-item {
+    width: 1050px;
+    padding: 30px 175px;
+  }
+
+  .knitting__color-wrapper,
+  .knitting__contact-wrapper {
+    background-color: #f1f1f1;
+  }
+
+  .knitting__type-list {
+    // padding-top: 34px;
+    padding-bottom: 49px;
+  }
+
+  .knitting__color-list {
+    padding-top: 49px;
+    padding-bottom: 27px;
+    padding-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .knitting__color-item,
+  .knitting__color-item:not(:last-child) {
+    width: 30%;
+  }
+
+  .knitting__color-item:nth-child(2n) {
+    margin: 0;
+  }
+
+  .knitting__personal-list {
+    padding-top: 48px;
+    padding-bottom: 49px;
+  }
+
+  .knitting__personal-label {
+    line-height: 52px;
+    display: flex;
+    flex-direction: row;
+    padding-right: 25px;
+  }
+
+  .knitting__personal-input {
+    flex-grow: 1;
+    padding-left: 18px;
+  }
+
+  .knitting__contact-wrapper {
+    padding-top: 43px;
+  }
+
+  .knitting__contact-input {
+    margin-bottom: 0;
+  }
+
+  .knitting__contact-item,
+  .knitting__contact-item:last-child {
+    padding-top: 0;
+    padding-bottom: 17px;
+  }
+
+  .knitting__contact-input-icon {
+    &--mail {
+      top: 18px;
+      right: 4px;
+    }
+
+    &--tel {
+      top: 18px;
+      right: 8px;
+    }
+  }
+
+  .knitting__contact-input-wrapper {
+    &:hover svg {
+      fill: @green;
+      opacity: 1;
+    }
+  }
+
+  .knitting__extra-wrapper {
+    padding-top: 0;
+  }
+
+  .knitting__extra-item {
+    padding-top: 29px;
+  }
+
+  .knitting__controls {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0;
+    padding-top: 18px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .knitting__submit {
+    width: 230px;
+    order: 1;
+  }
+
+  .knitting__note {
+    order: 2;
+    line-height: 52px;
+    padding: 0;
+  }
+}
